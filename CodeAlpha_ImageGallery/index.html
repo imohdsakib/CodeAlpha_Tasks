@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <p>Explore our beautiful collection of images</p>
+    </header>
+
+    <main class="container">
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="people">People</button>
+        </div>
+
+        <!-- Image Gallery Grid -->
+        <div class="gallery-grid" id="gallery">
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=1" alt="Beautiful landscape" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=2" alt="Mountain view" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=3" alt="Forest scene" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=13" alt="Ocean waves" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=14" alt="Desert landscape" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=15" alt="Tropical beach" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=16" alt="Autumn forest" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=17" alt="Sunset mountains" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=18" alt="Wildlife scene" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            
+            <!-- City Images -->
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=4" alt="City skyline" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=5" alt="Urban street" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=6" alt="Night lights" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=19" alt="Downtown traffic" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=20" alt="Metropolitan area" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=21" alt="City park" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=22" alt="Urban architecture" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=23" alt="Street art" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=24" alt="City waterfront" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+
+            <!-- Architecture Images -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=7" alt="Modern building" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=8" alt="Historic structure" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=9" alt="Bridge design" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=25" alt="Gothic cathedral" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=26" alt="Minimalist design" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=27" alt="Classical columns" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=28" alt="Futuristic building" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=29" alt="Industrial structure" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/400/300?random=30" alt="Art deco facade" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+
+            <!-- People Images -->
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=10" alt="Portrait" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=11" alt="Group photo" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=12" alt="Street photography" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=31" alt="Family moment" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=32" alt="Cultural celebration" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=33" alt="Outdoor activity" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=34" alt="Professional portrait" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=35" alt="Children playing" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/400/300?random=36" alt="Concert crowd" loading="lazy">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <button class="nav-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img src="" alt="" id="lightboxImg">
+            <button class="nav-btn next-btn" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>>
