@@ -1,0 +1,159 @@
+body {
+    background: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.calculator {
+    background: #fff;
+    padding: 30px 20px 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}.display {
+    background: #f8f9fa;
+    color: #000;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: right;
+    padding: 30px 20px;
+    min-height: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Number buttons - light gray */
+.number-btn {
+    background: #e5e5e7;
+    color: #000;
+}
+
+.number-btn:hover {
+    background: #d1d1d6;
+}
+
+/* Function buttons - medium gray */
+.function-btn {
+    background: #d1d1d6;
+    color: #000;
+}
+
+.function-btn:hover {
+    background: #c7c7cc;
+}
+
+/* Operator buttons - blue */
+.operator-btn {
+    background: #007aff;
+    color: #fff;
+}
+
+.operator-btn:hover {
+    background: #0051d5;
+}
+
+.operator-btn.active {
+    background: #fff;
+    color: #007aff;
+    border: 2px solid #007aff;
+}
+
+/* Equals button - blue */
+.equals-btn {
+    background: #007aff;
+    color: #fff;
+}
+
+.equals-btn:hover {
+    background: #0051d5;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+}
+
+.calculator {
+    position: relative;
+}
+
+
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 95vw;
+        padding: 20px 15px 15px;
+    }
+    
+    .display {
+        font-size: 3rem;
+        padding: 30px 15px 15px;
+    }
+    
+    .btn {
+        width: 65px;
+        height: 65px;
+        font-size: 1.8rem;
+    }
+    
+
+    
+    .buttons {
+        gap: 10px;
+    }
+}
